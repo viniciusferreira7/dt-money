@@ -8,7 +8,7 @@ import {
   TransactionsTable,
 } from './styles'
 
-interface Transactions {
+interface Transaction {
   id: number
   description: string
   type: 'income' | 'outcome'
@@ -18,7 +18,7 @@ interface Transactions {
 }
 
 export function Transactions() {
-  const [transactions, setTransactions] = useState<Transactions>([])
+  const [transactions, setTransactions] = useState<Transaction[]>([])
 
   async function loadTransactions() {
     const response = await fetch('http://localhost:3333/transactions')
@@ -37,14 +37,20 @@ export function Transactions() {
         <SearchForm />
         <TransactionsTable>
           <tbody>
-          
-              <td width="50%">hamburger</td>
-              <td>
-                <PriceHighLight variant="outcome">- R$ 59,00</PriceHighLight>
-              </td>
-              <td>Alimentação</td>
-              <td>10/04/2022</td>
-            </tr>
+            {transactions.map((transaction) => {
+              return (
+                <tr key={transaction.id}>
+                  <td width="50%">{transaction.description}</td>
+                  <td>
+                    <PriceHighLight variant={transaction.type}>
+                      {transaction.price}
+                    </PriceHighLight>
+                  </td>
+                  <td>{transaction.category}</td>
+                  <td>{transaction.createdAt}</td>
+                </tr>
+              )
+            })}
           </tbody>
         </TransactionsTable>
       </TransactionsContainer>
