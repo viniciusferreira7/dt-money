@@ -31,6 +31,38 @@
       "type": "outcome",
       "createdAt": "2022-11-03T23:33:13.866Z",
       "id": 4
+    },
+    {
+      "description": "Ally Hub",
+      "price": 1500,
+      "category": "Emprego",
+      "type": "income",
+      "createdAt": "2022-11-08T01:02:43.710Z",
+      "id": 5
+    },
+    {
+      "description": "Horizon",
+      "price": 240,
+      "category": "jogo",
+      "type": "outcome",
+      "createdAt": "2022-11-08T01:03:39.992Z",
+      "id": 6
+    },
+    {
+      "description": "Protocol",
+      "price": 350,
+      "category": "jogo",
+      "type": "outcome",
+      "createdAt": "2022-11-08T01:52:49.008Z",
+      "id": 7
+    },
+    {
+      "description": "Evil Dead",
+      "price": 50,
+      "category": "filme",
+      "type": "outcome",
+      "createdAt": "2022-11-08T02:30:06.307Z",
+      "id": 8
     }
   ]
 }
