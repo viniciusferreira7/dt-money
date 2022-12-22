@@ -63,6 +63,14 @@
       "type": "outcome",
       "createdAt": "2022-11-08T02:30:06.307Z",
       "id": 8
+    },
+    {
+      "description": "Relogio",
+      "price": 500,
+      "category": "produto",
+      "type": "outcome",
+      "createdAt": "2022-12-21T00:38:11.634Z",
+      "id": 9
     }
   ]
 }
