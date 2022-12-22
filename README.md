@@ -1,4 +1,4 @@
-### DT Money
+# DT Money
 
 <br/>
 
@@ -30,6 +30,8 @@ npx json-server server.json -p 3333
 #### `TypeScript`
 
 #### `React-hook-form`
+
+#### `@hookform/resolvers`
 
 #### `Zod`
 
